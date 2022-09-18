@@ -18,3 +18,7 @@ RP2040がCircuitPythonで簡単にキーコードを送出できるので試し�
 
 "lib/keycode_jp.py"ファイルを"CIRCUITPY"ドライブの"lib"フォルダへコピーする。  
 "code.py"ファイルを"CIRCUITPY"ドライブの"ルート"フォルダへコピーする。  
+
+### ボタン
+ボタンを追加する。ボタンの回路図は以下。
+![ボタンの回路図](images/button_schematic.png)

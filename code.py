@@ -23,7 +23,7 @@ time.sleep(1)  # Sleep for a bit to avoid a race condition on some systems
 keyboard = Keyboard(usb_hid.devices)
 
 # The pins we'll use, each will have an internal pullup
-keypress_pins = [board.D0]
+keypress_pins = [board.D0, board.D2, board.D3]
 # Our array of key objects
 key_pin_array = []
 # The Keycode sent for each button, will be paired with a control key
@@ -129,6 +129,23 @@ keys_pressed = [
                     [KeycodeJP.PERIOD, Keycode.SHIFT],
                     [KeycodeJP.FORWARD_SLASH, Keycode.SHIFT],
                     [KeycodeJP.INTERNATIONAL1, Keycode.SHIFT],
+                    [Keycode.ENTER],
+                ],
+                [ #button No2
+                    [Keycode.H, Keycode.SHIFT],
+                    [Keycode.E],
+                    [Keycode.L],
+                    [Keycode.L],
+                    [Keycode.O],
+                    [Keycode.SPACE],
+                ],
+                [ #button No3
+                    [Keycode.W, Keycode.SHIFT],
+                    [Keycode.O],
+                    [Keycode.R],
+                    [Keycode.L],
+                    [Keycode.D],
+                    [Keycode.ONE, Keycode.SHIFT],
                     [Keycode.ENTER],
                 ]
                ]
